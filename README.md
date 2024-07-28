@@ -26,12 +26,12 @@
 - Create a copy of the original data, and then add a new column of the predicted clusters.
 
 - Using hvPlot, create a scatter plot by setting x="price_change_percentage_24h" and y="price_change_percentage_7d".
-- 
+  
 - Color the graph points with the labels that you found by using K-means.
   
 - Add the crypto name to the hover_cols parameter to identify the cryptocurrency that each data point represents.
 
-<h3>Optimize the Clusters with Principal Component Analysis</h3> 
+<h3>3. Optimize the Clusters with Principal Component Analysis</h3> 
 
 - Create a PCA model instance, and set n_components=3. 
 
@@ -45,58 +45,62 @@
 
 - Create a new DataFrame with the PCA data. Be sure to set the coin_id index from the original DataFrame as the index for the new DataFrame. Review the resulting DataFrame.
 
-Find the Best Value for k by Using the PCA Data
-To receive all points, you must:
+<h3>4. Find the Best Value for k by Using the PCA Data</h3>
 
-Code the elbow method algorithm, and use the PCA data to find the best value for k. Use a range from 1 to 11. 
+- Code the elbow method algorithm, and use the PCA data to find the best value for k. Use a range from 1 to 11. 
 
-To visually identify the optimal value for k, plot a line chart of all the inertia values computed with the different values of k. (5 points)
+- To visually identify the optimal value for k, plot a line chart of all the inertia values computed with the different values of k.
 
-Answer the following questions: What’s the best value for k when using the PCA data? Does it differ from the best value for k that you found by using the original data? (3 points)
+- Answer the following questions: What’s the best value for k when using the PCA data? Does it differ from the best value for k that you found by using the original data?
 
-Cluster the Cryptocurrencies with K-means by Using the PCA Data (10 points)
-To receive all points, you must:
+  <pre><strong>Answer:</strong>[insert answer here]</pre>
 
-Initialize the K-means model with four clusters by using the best value for k. (1 point)
+<h3>5. Cluster the Cryptocurrencies with K-means by Using the PCA Data</h3>
 
-Fit the K-means model by using the PCA data. (1 point)
+- Initialize the K-means model with four clusters by using the best value for k.
 
-Predict the clusters for grouping the cryptocurrencies by using the PCA data. Review the resulting array of cluster values. (3 points)
+- Fit the K-means model by using the PCA data.
 
-Create a copy of the DataFrame with the PCA data, and then add a new column to store the predicted clusters. (1 point)
+- Predict the clusters for grouping the cryptocurrencies by using the PCA data.
+  
+- Review the resulting array of cluster values.
 
-Using hvPlot, create a scatter plot by setting x="PC1" and y="PC2". Color the graph points with the labels that you found by using K-means. Then add the crypto name to the hover_cols parameter to identify the cryptocurrency that each data point represents. (4 points)
+- Create a copy of the DataFrame with the PCA data, and then add a new column to store the predicted clusters. 
 
-Visualize and Compare the Results (15 points)
-To receive all points, you must:
+- Using hvPlot, create a scatter plot by setting x="PC1" and y="PC2".
+  
+- Color the graph points with the labels that you found by using K-means.
+  
+- Then add the crypto name to the hover_cols parameter to identify the cryptocurrency that each data point represents. 
 
-Create a composite plot by using hvPlot and the plus sign (+) operator to compare the elbow curve that you created from the original data with the one that you created from the PCA data. (5 points)
+<h3>6. Visualize and Compare the Results</h3>
 
-Create a composite plot by using hvPlot and the plus (+) operator to compare the cryptocurrency clusters that resulted from using the original data with those that resulted from the PCA data. (5 points)
+- Create a composite plot by using hvPlot and the plus sign (+) operator to compare the elbow curve that you created from the original data with the one that you created from the PCA data.
 
-Answer the following question: Based on visually analyzing the cluster analysis results, what’s the impact of using fewer features to cluster the data by using K-means? (5 points)
+- Create a composite plot by using hvPlot and the plus (+) operator to compare the cryptocurrency clusters that resulted from using the original data with those that resulted from the PCA data.
 
-Coding Conventions and Formatting (10 points)
-To receive all points, you must:
+- Answer the following question: Based on visually analyzing the cluster analysis results, what’s the impact of using fewer features to cluster the data by using K-means?
 
-Place imports at the top of the file, just after any module comments and docstrings, and before module globals and constants. (3 points)
+  <pre><strong>Answer:</strong>[insert answer here]</pre>
 
-Name functions and variables with lowercase characters, with words separated by underscores. (2 points)
+<h3>7. Coding Conventions and Formatting</h3>
 
-Follow DRY (Don't Repeat Yourself) principles, creating maintainable and reusable code. (3 points)
+- Place imports at the top of the file, just after any module comments and docstrings, and before module globals and constants.
 
-Use concise logic and creative engineering where possible. (2 points)
+- Name functions and variables with lowercase characters, with words separated by underscores.
 
-Deployment and Submission (10 points)
-To receive all points, you must:
+- Follow DRY (Don't Repeat Yourself) principles, creating maintainable and reusable code.
 
-Submit a link to a GitHub repository that’s cloned to your local machine and that contains your files. (4 points)
+- Use concise logic and creative engineering where possible.
 
-Use the command line to add your files to the repository. (3 points)
+<h3>8. Deployment and Submission</h3>
 
-Include appropriate commit messages in your files. (3 points)
+- Submit a link to a GitHub repository that’s cloned to your local machine and that contains your files.
 
-Code Comments (10 points)
-To receive all points, your code must:
+- Use the command line to add your files to the repository.
 
-Be well commented with concise, relevant notes that other developers can understand. (10 points)
+- Include appropriate commit messages in your files.
+
+<h3>9. Code Comments</h3>
+
+- Be well commented with concise, relevant notes that other developers can understand.
